@@ -1,6 +1,8 @@
 <template>
-  <div class="header">
-      <p>Some Text</p>
+    <div id="nav">
+       <router-link to="/">Add Acccount</router-link> |
+       <router-link to="/manage">Manage Accounts</router-link> |
+       <router-link to="/reports">Get Reports</router-link> 
   </div>
 </template>
 
@@ -11,8 +13,14 @@ export default {
 </script>
 
 <style lang="scss">
-
-.header {
-    background: red;
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>

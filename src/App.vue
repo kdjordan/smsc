@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <div id="nav">
-    <TopNav />
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <img src="./assets/v-tell.jpg" alt="">
+    <h3>SMSC Provisiong Tool</h3>
+    <top-nav />
     <router-view/>
   </div>
 </template>
@@ -13,7 +11,10 @@
 import TopNav from '@/components/TopNav'
 
 export default {
-  components: TopNav
+  name: 'app',
+  components: {
+    TopNav: TopNav
+  }
 }
 </script>
 
@@ -25,14 +26,5 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+
 </style>

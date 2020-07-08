@@ -1,5 +1,7 @@
 <template>
-  <div>HOME Check</div>
+  <div>
+      <p>Get Reports</p>
+  </div>
 </template>
 
 <script>

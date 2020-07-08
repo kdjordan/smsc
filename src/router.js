@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import AddAccount from '@/views/AddAccount.vue'
+import ManageAccount from '@/views/ManageAccount.vue'
+import GetReports from '@/views/GetReports.vue'
 
 Vue.use(Router)
 
@@ -12,7 +14,17 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
-    }
+      component: AddAccount
+    },
+    {
+      path: '/manage',
+      name: 'manage',
+      component: ManageAccount
+    },
+    {
+      path: '/reports',
+      name: 'reports',
+      component: GetReports
+    },
   ]
 })
